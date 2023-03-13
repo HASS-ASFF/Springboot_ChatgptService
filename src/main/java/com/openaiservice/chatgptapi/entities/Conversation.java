@@ -21,4 +21,8 @@ public class Conversation {
         this.question = question;
         this.response = response;
     }
+
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User user;
 }
